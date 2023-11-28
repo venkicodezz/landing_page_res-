@@ -1,0 +1,548 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+
+.nav {
+    width: 100%;
+    height: 65px;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+    border-bottom: 2px solid #dadada;
+    
+}
+
+.nav a {
+    font-size: 1vw;
+    padding: 0.6vw 1.1vw;
+    background-color: #5b4daf;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    text-decoration: none;
+}
+
+.nav-right ul {
+    display: flex;
+     margin-left: 30vw; 
+    gap: 3vw;
+    z-index: 1111;
+
+}
+
+.nav h2 {
+    font-size: 2vw;
+    font-weight: 700;
+    cursor: pointer;
+    color: #000000;
+    
+}
+
+.nav-right ul li {
+    font-size: 1.2vw;
+    cursor: pointer;
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.nav-right li:hover {
+    border-bottom: 1px solid #F79900;
+    transition: 1s all;
+}
+
+
+.nav i {
+    font-size: 1.6vw;
+    font-weight: 800;
+    display: none;
+    cursor: pointer;
+
+    z-index: 1111;
+}
+
+#menu-close {
+    display: none;
+}
+
+
+.content {
+    height: calc(100% - 70px);
+    width: 100%;
+    padding: 2vw 0;
+}
+
+.content {
+    display: flex;
+    position: relative;
+}
+
+.left {
+    height: 100%;
+    width: 50%;
+    padding: 5vw 4vw;
+    background-color: transparent;
+}
+
+.left h1 {
+    font-size: 3.5vw;
+    line-height: 4vw;
+    /* background-image: url('jmpe_yqbi_211126.jpg');
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; */
+}
+
+.left h1 span {
+    color: #F79900;
+}
+
+
+.left p {
+    font-size: 20px;
+    font-weight: 600;
+    width: 80%;
+    color: #666;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
+    overflow: hidden;
+}
+
+.right {
+    height: 100%;
+    width: 50%;
+
+}
+
+.right img {
+    height: 82%;
+    width: 100%; 
+
+}
+
+.content button {
+    font-size: 1.3vw;
+    padding: 0.9vw 2vw;
+    background-color: #5b4daf;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.container h2 {
+    color: #333;
+    font-size: 3vw;
+    text-align: center;
+    padding: 4vw 0;
+}
+
+
+/* services styles */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vw;
+    text-align: center;
+
+}
+
+.service {
+
+    height: auto;
+    width: 100%;
+    padding: 1vw 2vw;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    margin: 2vw;
+    border-radius: 5px;
+
+}
+
+.service h1 {
+    font-size: 2.3vw;
+    padding: 1vw 0;
+
+}
+
+.service p {
+    margin: 1vw 0;
+    color: #666;
+}
+
+.comment-form{
+    padding: 2vw;
+}
+
+/* plans */
+
+.container{
+   height: auto;
+}
+
+.row {
+    width: 90%;
+    max-width: 60vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.col {
+    background: #fff;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    padding: 3vw 3vw;
+    border-radius: 6px;
+    text-align: center;
+    color: #333;
+
+
+}
+
+.col p {
+    font-size: 2.2vw;
+    font-weight: 700;
+}
+
+.col h3 {
+    font-size: 2.3vw;
+    margin: 0.8vw 0 1vw;
+    font-weight: 500;
+}
+
+.col h3 span {
+    font-size: 1vw;
+}
+
+.col ul {
+    list-style: none;
+    text-align: left;
+    margin: 1.2vw 0;
+
+}
+
+.col ul li {
+    margin: 1vw 30%;
+
+}
+
+.col button {
+    background-color: #5b4daf;
+    color: #fff;
+    font-size: 1vw;
+    padding: 1vw 3vw;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 2vw;
+    text-align: center;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+
+.s-head h1 {
+    color: #333;
+    font-size: 3vw;
+    text-align: center;
+    padding: 3.2vw 0;
+}
+
+
+
+.comment {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    max-width: 40vw;
+    padding: 2vw;
+    margin: 40px auto;
+    border-radius: 4px;
+    position: relative;
+    border-top: 1.7vw solid #5b4daf;
+    border-bottom: 1.7vw solid #5b4daf;
+    border-radius: 6px;
+
+}
+
+.comment h1 {
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+.comment label {
+
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    outline: none;
+
+
+}
+
+input[type="text"],
+input[type="email"]:focus{
+    outline: none;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 15vw;
+    width: 100%;
+    outline: none;
+    border-radius: 4px;
+    
+}
+
+textarea:focus{
+    outline: none;
+    overflow: hidden;
+}
+
+.comment button {
+    padding: 10px 20px;
+    background-color: #5b4daf;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 2vw;
+}
+
+footer{
+    width: 100%;
+    padding: 0vw 0vw;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    margin-top: 5vw;
+
+}
+
+.foop{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #333;
+}
+
+footer{
+    border-top: 1px solid #333;
+}
+
+.foot1{
+    margin-bottom: 1.5vw;
+    
+}
+.foot1 li{
+    list-style: none;
+    padding: 0.5vw 1vw;
+    margin-top: 1vw;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1.1vw;
+
+}
+
+.copyright{
+    text-align: center;
+    padding: 0.2vw;
+    
+}
+
+.s-icons{
+    text-align: center;
+    padding: 0.4vw;
+
+}
+
+.s-icons i{
+    font-size: 1.3vw;
+    cursor: pointer;
+    margin: 1vw;
+}
+
+/* media queries */
+
+@media (max-width:600px) {
+
+    .nav {
+        height: 60px;
+        padding: 0 5vw;
+    }
+
+    .nav h2 {
+        font-size: 6vw;
+        padding: 0 6vw;
+    }
+
+    .nav-right ul {
+        display: none;
+        margin-top: 60vw;
+        background: #e9e9ea;
+        color: #fff;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+        width: 60%;
+        z-index: 2222;
+        border-radius: 4px;
+
+    }
+
+    .nav-right ul li {
+        display: block;
+        font-size: 5vw;
+        padding: 1.5vw;
+        cursor: pointer;
+
+
+    }
+
+    .nav i {
+        display: block;
+        font-size: 6vw;
+        position: relative;
+
+
+    }
+
+    .nav a {
+        display: none;
+    }
+
+    .content {
+        height: calc(100% - 70px);
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        height: 47%;
+        padding: 4vw 10vw;
+    }
+
+    .right {
+        width: 100%;
+        height: 53%;
+    }
+
+    .left h1 {
+        font-size: 7vw;
+        line-height: 10vw;
+    }
+
+    .left p {
+        font-size: 3vw;
+        width: 90%;
+        margin-top: 6vw;
+        margin-bottom: 5vw;
+    }
+
+    .content button {
+        font-size: 1.2vw;
+        padding: 2vw 3vw;
+        font-weight: 600;
+    }
+
+    .col ul {
+        text-align: center;
+    }
+
+    .col p {
+        font-size: 6vw;
+
+    }
+
+    .col,
+    p,
+    ul,
+    li {
+        padding-top: 1vw;
+    }
+
+    .col,
+    h3 {
+        font-size: 3vw;
+    }
+
+    .col button {
+        padding: 2.5vw 3vw;
+        font-size: 2.2vw;
+    }
+
+    .col h3 span {
+        font-size: 3vw;
+        margin-top: 2vw;
+    }
+
+    .services {
+        flex-grow: 1;
+        flex-direction: column;
+    }
+
+    .service h1 {
+        font-size: 5vw;
+
+    }
+
+    .service {
+        padding: 4vw 10vw;
+    }
+
+    .service p {
+        font-size: 2vw;
+
+
+    }
+
+    .comment {
+        max-width: 65vw;
+        margin-top: 25vw;
+        padding: 4vw 4vw;
+    }
+
+
+
+}
+
+/* media queries ends*/
